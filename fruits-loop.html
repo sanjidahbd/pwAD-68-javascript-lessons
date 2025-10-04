@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Fruit List</h3>
+    <script>
+        const fruits =["Mango", "Apple","Banana","Grape"];
+        for(let i =0; i<fruits.length; i++){
+            document.write(fruits[i] + "<br>");
+        }
+    </script> 
+    <hr>
+    <script>
+        document.write("<ol>");
+          for(let i =0; i<fruits.length; i++){
+            document.write( "<li>" + fruits[i] + "</li>");
+             }
+
+             document.write("</0l>");
+
+    </script>
+     <hr>
+    <script>
+        let output ="<ul>";
+          for(let i =0; i<fruits.length; i++){
+
+          output +="<li>" + fruits[i] + "</li>";
+             }
+             output +="</ul>";
+             document.write(output);
+
+           
+
+    </script>
+   
+    
+</body>
+</html>

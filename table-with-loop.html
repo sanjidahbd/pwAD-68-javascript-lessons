@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    table,td,th {
+        border: 1px solid #000;
+        border-collapse: collapse;
+    }
+</style>
+
+</head>
+<body>
+    <h3>Fruit List with Table</h3>
+    <script>
+      
+        const fruits =["Mango", "Apple","Banana","Grape"];
+        let sn = 1;
+        let output ="<table>";
+         output +="<tr><th>SN</th><th>Fruits Name</th></tr>";
+        for(let i =0; i<fruits.length; i++){
+         output += "<tr>";
+         output += "<td>" + sn +"</td>";
+         output += "<td>" + fruits[i]+"</td>";
+         output += "</tr>";
+         sn++;
+           
+                output += fruits[i];
+                 output += "</td> </tr>";
+        }
+        output +="</table>";
+        document.write(output);
+    </script> 
+    
+</body>
+</html>
