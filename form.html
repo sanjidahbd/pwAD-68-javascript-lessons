@@ -8,7 +8,7 @@
 <body>
     <h3>Registration From</h3>
     <div id="display"></div>
-   <from action="" name="rgs">
+   <form action="" name="rgs">
     Name:<br>
     <input type="text" name="fullname" placeholder="Enter Your Name"><br>
     Gender:<br>
@@ -24,22 +24,22 @@
    </select><br>
    Address:<br>
    <textarea name="address" id="" placeholder="Enter address"></textarea><br>
-  <button onclick="from_handle" type="button">submit</button>
-   </from>
+  <button onclick="form_handle()" type="button">submit</button>
+   </form>
    <script>
-    function from_handle() {
+    function form_handle() {
       let fname = document.rgs.fullname.value;
      
           alert(fname);
     }
-   function from_handle {
+   function form_handle() {
          let name = document.rgs.fullname.value;
          let gender = document.rgs.gender.value;
          let district= document.rgs.district.value;
          let address= document.rgs.address.value;
 
-         let output=("The name is:" + name + "Gender is:" + gender
-            +"The district is:" + district + "The address is" + address
+         let output=("The name is:" + name + "<br>" +"Gender is:" + gender + "<br>"
+            +"The district is:" + district + "<br>" +"The address is" + address
          )
          document.getElementById("display").innerHTML=output;
 
