@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #display{
+            width: 80px;
+            height: 20px;
+            background-color: aqua;
+            padding: 50px;
+        }
+    </style>
+   
+</head>
+<body>
+    <h3>Calculator</h3>
+    <div id="display"></div>
+    <script>
+        
+function SumFunc(x,y){
+    let z;
+    x = prompt ("Enter first number")
+    y = prompt ("Enter second number")
+    x = parseInt(x);
+    y = parseInt(y);
+    z = x+y;
+    document.getElementById("display").innerHTML="Total is" + z;
+//    alert(a+b);
+}
+function MultiplyFunc(x,y){
+    let z ;
+    x = prompt ("Enter first number")
+    y = prompt ("Enter second number")
+    // a = parseInt(a);
+    // b = parseInt(b);
+   z = x*y;
+   document.getElementById("display").innerHTML="Total is" + z ;
+}
+function SubFunc(x,y){
+    let z ;
+    x = prompt ("Enter first number")
+    y = prompt ("Enter second number")
+    // a = parseInt(a);
+    // b = parseInt(b);
+   z = x-y;
+   document.getElementById("display").innerHTML="Total is" + z ;
+}
+
+function DivFunc(x,y) {
+    let z;
+    x = prompt("Enter First Number")
+    y = prompt("Enter Second Number")
+    z = x/y;
+    alert(z);
+    // document.getElementById("display").innerHTML="Total is" + z;
+}
+
+  
+    </script>
+    <button onclick="SumFunc()">Sum</button>
+    <button onclick="MultiplyFunc()">Multification</button>
+    <button onclick="SubFunc()">Substraction</button>
+    <button onclick="DivFunc()">division</button>
+    
+</body>
+</html>

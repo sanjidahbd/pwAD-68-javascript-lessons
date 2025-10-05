@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Registration From</h3>
+    <div id="display"></div>
+   <from action="" name="rgs">
+    Name:<br>
+    <input type="text" name="fullname" placeholder="Enter Your Name"><br>
+    Gender:<br>
+    <input type="radio"name="gender" value="male">Male
+    <input type="radio" name="gender" value="female">Female<br>
+    District:<br>
+   <select name="district" id="">
+    <option value="">Select One</option>
+    <option>Dhaka</option>
+    <option>Sylhet</option>
+    <option>Rajshahi</option>
+    <option>Feni</option>
+   </select><br>
+   Address:<br>
+   <textarea name="address" id="" placeholder="Enter address"></textarea><br>
+  <button onclick="from_handle" type="button">submit</button>
+   </from>
+   <script>
+    function from_handle() {
+      let fname = document.rgs.fullname.value;
+     
+          alert(fname);
+    }
+   function from_handle {
+         let name = document.rgs.fullname.value;
+         let gender = document.rgs.gender.value;
+         let district= document.rgs.district.value;
+         let address= document.rgs.address.value;
+
+         let output=("The name is:" + name + "Gender is:" + gender
+            +"The district is:" + district + "The address is" + address
+         )
+         document.getElementById("display").innerHTML=output;
+
+    
+   }
+   
+   </script>
+</body>
+</html>
