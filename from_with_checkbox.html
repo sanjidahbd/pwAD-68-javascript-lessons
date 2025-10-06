@@ -25,11 +25,11 @@
    Address:<br>
    <textarea name="address" id="" placeholder="Enter address"></textarea><br>
    Skills:<br>
-   <input type="checkbox" name="skills[]" value="html">HTML
-   <input type="checkbox" name="skills[]" value="css">CSS
-   <input type="checkbox" name="skills[]" value="javascript">Javascript
-   <input type="checkbox" name="skills[]" value="php">PHP
-   <input type="checkbox" name="skills[]" value="mysql">MYSQL<br>
+   <input type="checkbox" name="skills[]"  class ="skills[]" value="html">HTML
+   <input type="checkbox" name="skills[]"  class ="skills[]" value="css">CSS
+   <input type="checkbox" name="skills[]" class ="skills[]" value="javascript">Javascript
+   <input type="checkbox" name="skills[]"  class ="skills[]"value="php">PHP
+   <input type="checkbox" name="skills[]"  class ="skills[]"value="mysql">MYSQL<br>
 
 
   <button onclick="from_handle()" type="button">submit</button>
@@ -39,9 +39,18 @@
         let output;
       let fname = document.rgs.fullname.value;
       let gender = document.rgs.gender.value;
-      output ="<h1>" + "fname" + "</h1>";
-      output +=
-     
+      let skills="";
+      let checkboxes = document.getElementsByClassName("skills");
+      for(let i=0;i<checkboxes.length;i++){
+        if(chekboxes[i].checked){
+            skills += checkboxes[i].value + ",";
+        }
+      }
+      output = "<h1>" + fname + "</h1>";
+      output += gender;
+     output += skills;
+     document.getElementById("display").innerHTML = output ;
+
         //   alert(fname);
     }
 //    function from_handle() {
