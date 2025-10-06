@@ -24,22 +24,35 @@
    </select><br>
    Address:<br>
    <textarea name="address" id="" placeholder="Enter address"></textarea><br>
+<<<<<<< HEAD:from.html
   <button onclick="from_handle()" type="button">submit</button>
+=======
+  <button onclick="form_handle()" type="button">submit</button>
+>>>>>>> cea98f65f2014fde85b006bf4fbecd4e780a34af:form.html
    </form>
    <script>
-    function from_handle() {
+    function form_handle() {
       let fname = document.rgs.fullname.value;
      
           alert(fname);
     }
+<<<<<<< HEAD:from.html
    function from_handle() {
+=======
+   function form_handle() {
+>>>>>>> cea98f65f2014fde85b006bf4fbecd4e780a34af:form.html
          let name = document.rgs.fullname.value;
          let gender = document.rgs.gender.value;
          let district = document.rgs.district.value;
          let address= document.rgs.address.value;
 
+<<<<<<< HEAD:from.html
          let output=("The name is:" + name + "<br>" +"Gender is:" + gender
             + "<br>" +" The district is:" + district +"<br>" + "The address is:" + address
+=======
+         let output=("The name is:" + name + "<br>" +"Gender is:" + gender + "<br>"
+            +"The district is:" + district + "<br>" +"The address is" + address
+>>>>>>> cea98f65f2014fde85b006bf4fbecd4e780a34af:form.html
          )
          document.getElementById("display").innerHTML=output;
 
