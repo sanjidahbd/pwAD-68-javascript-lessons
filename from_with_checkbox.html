@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Registration From</h3>
+    <div id="display"></div>
+   <form action="" name="rgs">
+    Name:<br>
+    <input type="text" name="fullname" placeholder="Enter Your Name"><br>
+    Gender:<br>
+    <input type="radio"name="gender" value="male">Male
+    <input type="radio" name="gender" value="female">Female<br>
+    District:<br>
+   <select name="district" id="">
+    <option value="">Select One</option>
+    <option>Dhaka</option>
+    <option>Sylhet</option>
+    <option>Rajshahi</option>
+    <option>Feni</option>
+   </select><br>
+   Address:<br>
+   <textarea name="address" id="" placeholder="Enter address"></textarea><br>
+   Skills:<br>
+   <input type="checkbox" name="skills[]" value="html">HTML
+   <input type="checkbox" name="skills[]" value="css">CSS
+   <input type="checkbox" name="skills[]" value="javascript">Javascript
+   <input type="checkbox" name="skills[]" value="php">PHP
+   <input type="checkbox" name="skills[]" value="mysql">MYSQL<br>
+
+
+  <button onclick="from_handle()" type="button">submit</button>
+   </form>
+   <script>
+    function from_handle() {
+        let output;
+      let fname = document.rgs.fullname.value;
+      let gender = document.rgs.gender.value;
+      output ="<h1>" + "fname" + "</h1>";
+      output +=
+     
+        //   alert(fname);
+    }
+//    function from_handle() {
+//          let name = document.rgs.fullname.value;
+//          let gender = document.rgs.gender.value;
+//          let district = document.rgs.district.value;
+//          let address= document.rgs.address.value;
+
+//          let output=("The name is:" + name + "<br>" +"Gender is:" + gender
+//             + "<br>" +" The district is:" + district +"<br>" + "The address is:" + address
+//          )
+//          document.getElementById("display").innerHTML=output;
+
+    
+//    }
+   
+   </script>
+   <div id="display"></div>
+</body>
+</html>
