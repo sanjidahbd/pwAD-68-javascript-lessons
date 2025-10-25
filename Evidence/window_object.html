@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Informatiom From</h3>
+     <form action="" name="myform">
+        Name:
+        <input type="text" name="name" placeholder="Enter Your name"><br>
+        <br>Contact:
+        <input type="text" name="contact"><br><br>
+        Remarks:
+       <textarea name="Remarks" id=""></textarea><br>
+       Gender:<br>
+       <input type="radio" name="gender" value="male">Male
+       <input type="radio" name="gender" value="female">Female<br>
+       
+       Course:
+       <input type="checkbox" name="course";>NT;
+       <input type="checkbox" name="course">LAD;
+       <input type="checkbox" name="course">DDD;
+       <input type="checkbox" name="course">ESAD;<br>
+       Location:
+      <select name="Location" id="">
+        <option >select one</option>
+        <option >Dhanmondi</option>
+        <option >Mirpur</option>
+        <option >Banani</option>
+      </select><br>
+
+
+        <input type="button" value="Submit" onclick="myWindow()">
+        </form>
+  
+    <script>
+        function myWindow(){
+           let x = window.open("","abc","width=400,height=300,top=200,left=350")
+           let name = document.myform.name.value;
+           let contact = document.myform.contact.value;
+           let Remarks = document.myform.Remarks.value;
+           let Gender = document.myform.gender.value;
+           let location = document.myform.Location.value;
+         let  output = "<h3>Information From</h3>";
+           output += "The personal Name is:"  + name +"<br>";
+           output += "The Number is:"  + contact + "<br>";
+           output += "Remarks: " + Remarks + "<br>";
+           output += "Gender: " + Gender + "<br>";
+           output += "Location: " + location + "<br>";
+
+           x.document.write(output);
+        }
+
+    </script>
+</body>
+</html>

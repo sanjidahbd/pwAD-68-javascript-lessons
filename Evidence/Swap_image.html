@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let sample1 = new Image()
+        sample1.src = "image/bird3.jpg"
+
+        let sample2 = new Image()
+        sample2.src = "image/workplace.jpg"
+
+        function switch2() {
+            document.sample.src = sample2.src;
+        }
+
+        function switch1() {
+            document.sample.src = sample1.src;
+        }
+
+    </script>
+<a href="#" onmouseover="switch2()" onmouseout="switch1()">
+            <img src="image/bird3.jpg" name="sample" width="600px">
+        </a>
+  
+
+</body>
+
+</html>

@@ -8,7 +8,8 @@
 <body>
    <script>
     function emailvalidation(){
-        let pattern = /[A-z0-9._] +@[A-z0-9.-]+\.[A-z]{2,4}$/i;
+        // let pattern = /[A-z0-9._] +@[A-z0-9.-]+\.[A-z]{2,4}$/i;
+        let pattern = /[a-z0-9] +@[a-z0-9]+\.[a-z]{2,4}$/;
 
         if(document. myform.email.value.search(pattern)==1){
             alert("Invalid E-mail");
